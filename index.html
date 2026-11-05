@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>মৌলভী গোষ্ঠী – আমাদের বংশ পরিচয়</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Bengali:wght@400;500;600;700;800&family=Noto+Sans+Arabic:wght@500;700&display=swap" rel="stylesheet">
+<link rel="icon" href="images/logo.svg">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="top">
+  <a class="brand" href="#hero"><img src="images/logo.svg" alt="মৌলভী গোষ্ঠীর লোগো"><span>মৌলভী গোষ্ঠী</span></a>
+  <button class="menu-btn" id="menuBtn" aria-label="মেনু খুলুন" aria-expanded="false" aria-controls="menu"><i></i><i></i><i></i></button>
+  <nav id="menu">
+    <a href="#hero">প্রথম পাতা</a>
+    <a href="#time">আজকের তারিখ ও সময়</a>
+    <a href="#tree">আমাদের বংশ</a>
+  </nav>
+</header>
+
+<div class="bismillah">
+  <p class="ar" lang="ar" dir="rtl">بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ</p>
+  <p class="bn">বিসমিল্লাহির রাহমানির রাহিম</p>
+  <p class="sal">আসসালামু আলাইকুম – আপনাকে স্বাগতম</p>
+</div>
+<main>
+<section id="hero" class="hero" aria-label="বাবা ও ছেলেরা">
+  <div class="gosti">মৌলভী গোষ্ঠী</div>
+  <div class="slides" id="slides"></div>
+  <div class="hero-ctl">
+    <button id="prev" aria-label="আগের জন"><svg viewBox="0 0 24 24" width="26" height="26" aria-hidden="true"><path d="M15 4l-8 8 8 8" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+    <div class="dots" id="dots"></div>
+    <span class="cnt" id="cnt"></span>
+    <button id="next" aria-label="পরের জন"><svg viewBox="0 0 24 24" width="26" height="26" aria-hidden="true"><path d="M9 4l8 8-8 8" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+    <p class="swipe">👆 পরের জনকে দেখতে ছবি বাঁ দিকে টানুন বা তীর বাটনে চাপুন</p>
+  </div>
+</section>
+
+<section id="time" class="wrap time">
+  <div class="dates">
+    <article class="dcard"><h3>বাংলা তারিখ</h3><p class="big" id="d-bn"></p><p id="d-bn2"></p></article>
+    <article class="dcard ar"><h3>আরবি তারিখ (হিজরি)</h3><p class="big" id="d-ar"></p><p id="d-ar2" dir="rtl" lang="ar"></p></article>
+    <article class="dcard"><h3>ইংরেজি তারিখ</h3><p class="big" id="d-en"></p><p id="d-en2"></p></article>
+  </div>
+  <div class="clock">
+    <div class="analog" id="analog" aria-hidden="true">
+      <div class="ticks" id="ticks"></div><div class="nums" id="nums"></div>
+      <i class="h" id="hh"></i><i class="m" id="mm"></i><i class="s" id="ss"></i><b></b>
+    </div>
+    <div class="digital" id="dt"></div>
+  </div>
+</section>
+
+<section id="tree" class="wrap tree">
+  <h2><span class="mark">মৌলভী গোষ্ঠী</span>র বংশ তালিকা</h2>
+  <p class="hint">বাবা-মা থেকে শুরু করে ছেলে ও নাতিদের পরিচয় নিচে দেখুন</p>
+  <div class="stats" id="stats"></div>
+  <div class="root" id="root"></div>
+  <div class="trunk"></div>
+  <div class="branches" id="branches"></div>
+</section>
+</main>
+
+<div class="lb" id="lb" hidden><button class="lb-x" id="lbx" aria-label="বন্ধ করুন">✕</button><figure><img id="lbi" alt=""><figcaption id="lbc"></figcaption></figure></div>
+<footer>© মৌলভী গোষ্ঠী – সর্বস্বত্ব সংরক্ষিত</footer>
+<script src="js/script.js"></script>
+</body>
+</html>
